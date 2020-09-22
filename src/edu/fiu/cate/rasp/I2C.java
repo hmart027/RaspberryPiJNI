@@ -104,7 +104,7 @@ public class I2C {
 		return writeRead(new byte[]{reg}, len);
 	}
 	
-	public synchronized boolean witeRegister(byte reg, byte[] data){
+	public synchronized boolean writeRegister(byte reg, byte[] data){
 		byte[] buf = new byte[data.length + 1];
 		buf[0] = reg;
 		for(int i = 0; i < data.length; i++)
